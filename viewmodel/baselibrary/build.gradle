@@ -1,0 +1,82 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdkVersion rootProject.ext.android ["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android ["buildToolsVersion"]
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android ["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android ["targetSdkVersion"]
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+    /**
+     * 开启 ViewBinding
+     */
+    viewBinding {
+        enabled = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+dependencies {
+
+    api 'androidx.appcompat:appcompat:1.2.0'
+    api 'com.google.android.material:material:1.2.1'
+    implementation 'org.jetbrains:annotations:15.0'
+    testImplementation 'junit:junit:4.+'
+
+    /*UI适配框架*/
+    api rootProject.ext.dependencies ["rxjava"]
+    api rootProject.ext.dependencies ["rxandroid"]
+    api rootProject.ext.dependencies ["retrofit"]
+    api rootProject.ext.dependencies ["retrofit-scalars"]
+    api rootProject.ext.dependencies ["retrofit-gson"]
+    api rootProject.ext.dependencies ["retrofit-adapter"]
+    api rootProject.ext.dependencies ["okhttp-log-interceptor"]
+    api rootProject.ext.dependencies ["espresso-core"]
+    api rootProject.ext.dependencies ["lifecycle-extensions"]
+    api rootProject.ext.dependencies ["orhanobut"]
+    api rootProject.ext.dependencies ["bottom-tab"]
+    api rootProject.ext.dependencies ["eventbus"]
+    api rootProject.ext.dependencies ["glide"]
+    //smartrefresh刷新
+    api rootProject.ext.smartrefreshLibs
+
+    api rootProject.ext.dependencies["autosize"]
+
+    //arouter
+    api rootProject.ext.dependencies["arouter"]
+    annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
+    annotationProcessor  rootProject.ext.dependencies["arouter-compiler"]
+
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.42'
+    //二维码相关ZXing
+    api 'com.google.zxing:core:3.3.3'
+    api 'com.yanzhenjie:permission:1.0.8'
+    api 'com.android.support:multidex:1.0.2'
+
+
+}

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">云平台</string>
+    <string name="title_home">首页</string>
+    <string name="title_mine">我的</string>
+    <string name="title_notifications">消息</string>
+
+    <!--网络数据加载-->
+    <string name="loading">正在加载</string>
+    <string name="no_network">请检查网络连接</string>
+    <string name="network_connect_error">网络访问错误，请稍后再试</string>
+    <string name="json_parse_error">数据解析出错</string>
+    <string name="network_timeout">网络访问超时</string>
+    <string name="network_connect">网络连接异常</string>
+    <string name="illegal_argument">非法参数异常</string>
+    <string name="server_error">服务器异常</string>
+    <string name="data_error">数据异常</string>
+    <string name="server_maintance">服务器正在维护</string>
+</resources>

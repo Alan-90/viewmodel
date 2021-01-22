@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_item_view"
+    android:layout_width="120dp"
+    android:layout_height="50dp">
+
+    <CheckBox
+        android:id="@+id/item_cb_view"
+        style="@style/transfer_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_marginLeft="15dp" />
+
+    <www.hbj.cloud.baselibrary.common.widget.roundview.RoundTextView
+        android:id="@+id/item_tv_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:paddingRight="15dp"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:text="AAAAA"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/default_line" />
+
+</RelativeLayout>

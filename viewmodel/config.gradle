@@ -1,0 +1,65 @@
+ext {
+
+    android = [
+            compileSdkVersion: 30,
+            buildToolsVersion: "30.0.3",
+            minSdkVersion    : 19,
+            targetSdkVersion : 30,
+            versionCode      : 1,
+            versionName      : "1.0.0"
+    ]
+
+    version = [
+            rxjava            : "2.1.11",
+            retrofitVersion   : "2.5.0",
+            logginginterceptor: "3.9.1",
+            rxandroidVersion  : "2.0.2",
+            lifecycle  : "2.2.0",
+            espresso  : "3.3.0",
+            bottomTab  : "2.3.0X",
+            orhanobut  : "2.0.1",
+            eventbus  : "3.2.0",
+            smartrefresh  : "2.0.1",
+            glide  : "4.11.0",
+            autosize  : "1.2.1",
+    ]
+
+    dependencies = [
+            //support
+            "rxjava"                : "io.reactivex.rxjava2:rxjava:${version["rxjava"]}",
+            "rxandroid"             : "io.reactivex.rxjava2:rxandroid:${version["rxandroidVersion"]}",
+            "logging-interceptor"          : "com.squareup.okhttp3:logging-interceptor:3.10.0",
+
+
+            "retrofit"              : "com.squareup.retrofit2:retrofit:${version["retrofitVersion"]}",
+            "retrofit-scalars"      : "com.squareup.retrofit2:converter-scalars:${version["retrofitVersion"]}",
+            "retrofit-gson"         : "com.squareup.retrofit2:converter-gson:${version["retrofitVersion"]}",
+            "retrofit-adapter"      : "com.squareup.retrofit2:adapter-rxjava2:${version["retrofitVersion"]}",
+
+            "okhttp-log-interceptor": "com.squareup.okhttp3:logging-interceptor:${version["logginginterceptor"]}",
+
+            "espresso-core"         : "androidx.test.espresso:espresso-core:${version["espresso"]}",
+            "lifecycle-extensions"  : "androidx.lifecycle:lifecycle-extensions:${version["lifecycle"]}",
+            "orhanobut"             : "com.orhanobut:hawk:${version["orhanobut"]}",
+            "bottom-tab"            : "me.majiajie:pager-bottom-tab-strip:${version["bottomTab"]}",
+            "eventbus"              : "org.greenrobot:eventbus:${version["eventbus"]}",
+            "glide"              : "com.github.bumptech.glide:glide:${version["glide"]}",
+
+            //头条适配方案
+            "autosize"   : "me.jessyan:autosize:1.2.1",
+            "arouter"                      : 'com.alibaba:arouter-api:1.5.0',
+            "arouter-compiler"             : 'com.alibaba:arouter-compiler:1.2.2',
+
+
+    ]
+    //SmartRefreshLayout刷新
+    smartrefresh =  [
+            "smartrefreshlayout"       : "com.scwang.smart:refresh-layout-kernel:${version["smartrefresh"]}",//核心必须依赖
+            "smartrefreshclassics"     : "com.scwang.smart:refresh-header-classics:${version["smartrefresh"]}",//经典刷新头
+            "smartrefreshmaterial"     : "com.scwang.smart:refresh-header-material:${version["smartrefresh"]}",//谷歌刷新头
+            "smartrefreshclassicsfooter"    : "com.scwang.smart:refresh-footer-classics:${version["smartrefresh"]}",//经典footer
+            "smartrefreshballfooter"    : "com.scwang.smart:refresh-footer-ball:${version["smartrefresh"]}"//经典footer
+    ]
+
+    smartrefreshLibs = smartrefresh.values()
+}

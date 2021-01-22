@@ -1,0 +1,65 @@
+<resources>
+
+
+    <declare-styleable name="ErrorView">
+        <attr name="ev_errorTitle" format="string" />
+        <attr name="ev_errorTitleColor" format="color" />
+        <attr name="ev_errorSubtitle" format="string" />
+        <attr name="ev_errorSubtitleColor" format="color" />
+        <attr name="ev_errorImage" format="reference" />
+        <attr name="ev_showTitle" format="boolean" />
+        <attr name="ev_showSubtitle" format="boolean" />
+        <attr name="ev_showRetryButton" format="boolean" />
+        <attr name="ev_retryButtonBackground" format="reference" />
+        <attr name="ev_retryButtonTextColor" format="color" />
+    </declare-styleable>
+    <style name="alertDialogStyle">
+        <item name="android:fullDark">@drawable/herily_alertex_dlg_bg_full_dark</item>
+        <item name="android:topDark">@drawable/herily_alertex_dlg_bg_top_dark</item>
+        <item name="android:centerDark">@drawable/herily_alertex_dlg_bg_center_dark</item>
+        <item name="android:bottomDark">@drawable/herily_alertex_dlg_bg_bottom_dark</item>
+        <item name="android:fullBright">@drawable/herily_alertex_dlg_bg_full_dark</item>
+        <item name="android:topBright">@drawable/herily_alertex_dlg_bg_top_dark</item>
+        <item name="android:centerBright">@drawable/herily_alertex_dlg_bg_center_dark</item>
+        <item name="android:bottomBright">@drawable/herily_alertex_dlg_bg_bottom_dark</item>
+        <item name="android:bottomMedium">@drawable/herily_alertex_dlg_bg_bottom_dark</item>
+        <item name="android:centerMedium">@drawable/herily_alertex_dlg_bg_center_dark</item>
+    </style>
+    <!-- 设置默认progressdialog样式 -->
+    <style name="baseProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="custom_tab_text" parent="@style/custom_text_view">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@drawable/main_tab_tv_selector</item>
+
+    </style>
+
+    <style name="custom_text_view" parent="@android:style/Widget.TextView">
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!--popwidnow 显示消失动画 -->
+    <style name="pop_anim_style">
+        <item name="android:windowEnterAnimation">@anim/pop_anim_enter_bottom</item> <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/pop_anim_exit_bottom</item> <!-- 指定消失的动画xml -->
+    </style>
+
+    <!-- title底部边界线顏色 -->
+    <style name="view_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/default_line</item>
+    </style>
+
+    <style name="transfer_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:enabled">false</item>
+        <item name="android:button">@drawable/checkbox_choose</item>
+    </style>
+
+</resources>

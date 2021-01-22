@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">云平台</string>
+    <string name="title_home">首页</string>
+    <string name="title_mine">我的</string>
+    <string name="title_notifications">消息</string>
+
+    <!--网络数据加载-->
+    <string name="loading">正在加载</string>
+    <string name="no_network">请检查网络连接</string>
+    <string name="network_connect_error">网络访问错误，请稍后再试</string>
+    <string name="json_parse_error">数据解析出错</string>
+    <string name="network_timeout">网络访问超时</string>
+    <string name="network_connect">网络连接异常</string>
+    <string name="illegal_argument">非法参数异常</string>
+    <string name="server_error">服务器异常</string>
+    <string name="data_error">数据异常</string>
+    <string name="server_maintance">服务器正在维护</string>
+
+
+    <string name="choose_drawback_reason_of_refuse">选择退款原因</string>
+    <string name="reason_draw_back_buy_more">多拍/错拍/不喜欢/不想要</string>
+    <string name="reason_draw_back_place_choose">请选择</string>
+    <string name="reason_draw_back_not_receive">未收到货</string>
+    <string name="reason_draw_back_its_fake">假货</string>
+    <string name="reason_draw_back_buy_error">卖家错发，漏发</string>
+    <string name="reason_draw_back_type_error">型号款式颜色等问题</string>
+    <string name="reason_draw_back_quality_problem">商品质量瑕疵</string>
+    <string name="reason_draw_back_deal">协商一致退款</string>
+    <string name="put_logistics">提交物流</string>
+    <string name="reason_draw_back_no_info_of_logistics">无物流信息</string>
+    <string name="reason_draw_back_no_goods">缺货</string>
+    <string name="reason_draw_back_another_reason">其他原因</string>
+    <string name="cancel">取消</string>
+</resources>

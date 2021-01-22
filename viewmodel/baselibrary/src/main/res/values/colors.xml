@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#ffbb86fc</color>
+    <color name="purple_500">#ff6200ee</color>
+    <color name="purple_700">#ff3700b3</color>
+    <color name="teal_200">#ff03dac5</color>
+    <color name="teal_700">#ff018786</color>
+    <color name="black">#ff000000</color>
+    <color name="colorAccent">#D8D8D8</color>
+    <color name="white">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+
+
+    <color name="common_bg">#f0f0f0</color>
+    <color name="common_title_bg">#ffffff</color>
+    <color name="default_line_color">#e8e8e8</color>
+
+
+    <color name="c_053ce4">#053ce4</color>
+    <color name="c_1bb7b8bc">#3d3d3d</color>
+    <color name="color_1">#111111</color>
+
+    <!--zxing-->
+    <color name="possible_result_points">#c0ffbd21</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="a7D7D7D">#7D7D7D</color>
+    <color name="a6DD400">#6DD400</color>
+    <color name="E33A3E">#E33A3E</color>
+    <color name="common_red">#FF4B3E</color>
+    <color name="FFC134">#FFC134</color>
+    <color name="FF4B3E">#FF4B3E</color>
+    <color name="FFF6F7F8">#FFF6F7F8</color>
+
+    <color name="highlight">#ff950c</color> <!--高亮色 -->
+
+    <color name="ngr_textColorPrimary">#171717</color>   <!--深黑色文字 -->
+    <color name="ngr_textColorSecondary">#959595</color> <!--灰色文字 -->
+    <color name="textColorHint">#cccccc</color>      <!--edittext中hint文字颜色 -->
+    <color name="textColorYellow">#ff950c</color>    <!--橙黄色文字 -->
+
+    <color name="a5E7DD6">#FFC134</color>
+    <color name="textColorBlue">#476df7</color>      <!--蓝色文字 -->
+
+    <color name="ngr_colorPrimary">#476df7</color>       <!--蓝色背景 -->
+
+
+    <color name="dlg_btn_text_color_normal">#ff3ec9b6</color>
+    <color name="dlg_btn_text_color_pressed">#ffffffff</color>
+    <color name="dlg_btn_text_color_disable">#ff979797</color>
+
+
+    <color name="ngr_titlebarColor">#476df7</color>      <!--顶部栏背景 -->
+    <color name="ngr_titlebarMainTextColor">@color/ngr_textColorPrimary</color>   <!--顶部栏中间文字颜色 -->
+    <color name="ngr_statusbarColor">@color/a5E7DD6</color>      <!--手机状态栏背景 -->
+
+
+
+    <color name="default_line">#dddddd</color>
+</resources>

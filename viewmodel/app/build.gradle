@@ -1,0 +1,64 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion rootProject.ext.android ["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android ["buildToolsVersion"]
+
+    defaultConfig {
+        applicationId "www.hbj.cloud.platform"
+        minSdkVersion rootProject.ext.android ["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android ["targetSdkVersion"]
+        versionCode 1
+        versionName "1.0"
+        ndk {
+            abiFilters 'armeabi','x86'
+        }
+        multiDexEnabled true
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    /**
+     * 开启 ViewBinding
+     */
+    viewBinding {
+        enabled = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+
+    implementation rootProject.ext.dependencies ["bottom-tab"]
+
+
+    api project(':baselibrary')
+//    implementation "io.reactivex.rxjava2:rxandroid:$rxandroidVersion"
+//    implementation "io.reactivex.rxjava2:rxjava:$rxjavaVersion"
+
+    implementation rootProject.ext.dependencies ["retrofit"]
+    implementation rootProject.ext.dependencies ["retrofit-scalars"]
+
+}
